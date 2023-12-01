@@ -56,3 +56,33 @@ const id2 = Symbol("123");
 // console.log(id1 === id2); // false
 
 const bigNumber = 782364874632984023472390874n;
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/*
+    Primitive data types uses "stack" memory
+        -- here we get a new copy
+    Reference data types uses "heap" memory
+        -- here we get a reference
+*/
+
+let str1 = "temp";
+
+// new copy of str1 is created
+let str2 = str1;
+str2 = "dummy";
+
+console.log(str1);
+console.log(str2);
+
+let user1 = {
+    email: "temp@gmail.com",
+    upi: "user@ybl",
+};
+
+// reference of user1 is given to user2
+let user2 = user1;
+user2.email = "dummy@gmail.com";
+
+console.log(user1.email);
+console.log(user2.email);

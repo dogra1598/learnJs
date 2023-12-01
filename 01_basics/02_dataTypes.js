@@ -53,6 +53,6 @@ let temperature = null; // value is not undefined, intentionally setting value a
 
 const id1 = Symbol("123");
 const id2 = Symbol("123");
-console.log(id1 === id2); // false
+// console.log(id1 === id2); // false
 
 const bigNumber = 782364874632984023472390874n;
